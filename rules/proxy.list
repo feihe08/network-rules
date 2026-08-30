@@ -1,1 +1,7 @@
 # Personal proxy rules
+DOMAIN-KEYWORD,pca.st
+DOMAIN-KEYWORD,bumingbai
+DOMAIN-KEYWORD,buzzsprout
+DOMAIN-KEYWORD,cmoney
+DOMAIN-SUFFIX,giffgaff.com
+DOMAIN-SUFFIX,gmcc234.pub.3gppnetwork.org
