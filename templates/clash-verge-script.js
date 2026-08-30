@@ -15,6 +15,14 @@ const ruleProviders = {
     path: "./ruleset/personal-reject.list",
     interval: 86400,
   },
+  "blackmatrix-advertising-lite": {
+    type: "http",
+    behavior: "classical",
+    format: "yaml",
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Classical.yaml",
+    path: "./ruleset/blackmatrix-advertising-lite.yaml",
+    interval: 86400,
+  },
   "blackmatrix-openai": {
     type: "http",
     behavior: "classical",
@@ -93,6 +101,7 @@ function buildRules(regularProxyPolicy) {
     "GEOIP,LAN,DIRECT,no-resolve",
     "RULE-SET,personal-direct,DIRECT",
     "RULE-SET,personal-reject,REJECT",
+    "RULE-SET,blackmatrix-advertising-lite,REJECT",
     `RULE-SET,blackmatrix-openai,${regularProxyPolicy}`,
     `RULE-SET,blackmatrix-claude,${regularProxyPolicy}`,
     `RULE-SET,broker,${regularProxyPolicy}`,
